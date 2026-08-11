@@ -1,16 +1,33 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
-</p>
+# Teslo E-Commerce API 🛒
 
-# Teslo API
+A robust and secure RESTful API for an e-commerce platform built with **NestJS**, **TypeScript**, and **PostgreSQL**. This project features a modular architecture focusing on scale, complete authentication, and data integrity.
 
-1. clonar proyect
-2. yarn install
-3. clonar archivo .env.template y renombrarlo a .env
-4. cambiar las variables de entorno
-5. Levantar la base de datos
-```
-docker-compose up -d
-```
+## 🚀 Key Features
+* **Full Authentication & Authorization:** Secure login and registration using JWT tokens, custom decorators, and Role-Based Access Control (RBAC).
+* **Products Management:** CRUD operations for store items, multiple sizes, tags, and categorized filtering.
+* **File Upload System:** Integrated image storage and serving endpoints with strict file format validation.
+* **Database & Type Safety:** Managed with **TypeORM**, featuring complex entity relations and automated seeding.
+* **Data Validation:** Bulletproof request inputs guarded by global `ValidationPipe` leveraging `class-validator`.
 
-6. yarn start:dev
+## 🛠️ Tech Stack
+* **Backend Framework:** NestJS (v10)
+* **Language:** TypeScript
+* **Database:** PostgreSQL (with TypeORM)
+* **Environment:** Docker & Docker Compose
+
+## 📦 Local Setup
+
+1. Clone this repository.
+2. Setup your environment variables by copying `.env.template` into a new `.env` file.
+3. Spin up the PostgreSQL database container:
+   ```bash
+   docker-compose up -d
+   ```
+4. Install dependencies:
+   ```bash
+   yarn install
+   ```
+5. Run the server in development mode:
+   ```bash
+   yarn start:dev
+   ```
